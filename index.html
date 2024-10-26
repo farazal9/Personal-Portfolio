@@ -211,7 +211,7 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
 
-                    <form id="contactForm">
+                    <form action="https://formspree.io/f/xzbnyzlk" method="POST" id="contactForm">
 
                         <div class="form-group mt-3">
                             <label for="name">Your Name</label>
@@ -228,32 +228,46 @@
                             <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-5">Send Message</button>
+                        <button type="submit"  class="btn btn-primary mt-5">Send Message <img class="img-fluid" src="./img/share.png" alt="f"> </button>
                     </form>
 
-                    <script>
-                        // Initialize EmailJS
-                        emailjs.init("YOUR_USER_ID"); // Replace with your actual User ID from EmailJS
-                        console.log("EmailJS initialized successfully");
-
-                        // Handle form submission
-                        document.getElementById("contactForm").addEventListener("submit", function (event) {
-                            event.preventDefault(); // Prevent default form submission
-
-                            // Attempt to send form data
-                            emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
-                                .then(function (response) {
-                                    alert("Message sent successfully!");
-                                    console.log("Email sent successfully:", response);
-                                })
-                                .catch(function (error) {
-                                    console.error("Failed to send message:", error); // Log error details
-                                    alert("Failed to send message. Please check your setup and try again.");
-                                });
-                        });
-                    </script>
-
-
+            
+<!-- 
+                    <form action="https://formspree.io/f/xzbnyzlk" method="POST">
+                        <div class="form-input">
+                            <div>
+                                <label>Full name</label>
+                            </div>
+                            <input type="text">
+                        </div>
+    
+    
+                        <div class="form-input">
+                            <div>
+                                <label>Email</label>
+                            </div>
+                            <input type="email" name="email">
+                        </div>
+    
+    
+    
+                        <div class="form-input">
+                            <div>
+                                <label>Phone</label>
+                            </div>
+                            <input type="number">
+                        </div>
+    
+    
+                        <div class="form-text">
+                            <div>
+                                <label>Message</label>
+                            </div>
+                            <textarea name="message" cols="50" rows="5"></textarea>
+                        </div>
+    
+                        <button type="submit" class="hire-btn">Hire me</button>
+                    </form> -->
 
                 </div>
 
