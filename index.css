@@ -3,14 +3,69 @@
 } 
 .dev{
     color: #00ADB5;
+  
 }
 .hire-me{
     background-color: #00ADB5;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.hire-me:hover{
+    transform: translateY(-10px);
+
 }
 .dowload-cv{
     background-color: #616d7e; 
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.dowload-cv:hover{
+    transform: translateY(-10px); 
 }
 
 p{
     font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
 }
+
+
+  
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+  }
+  
+  @-webkit-keyframes squareToCircle {
+      0% {
+        border-radius: 0 0 0 0;
+        background: coral;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+      }
+      50% {
+        border-radius: 50% 50% 0 0;
+        background: indianred;
+        transform: rotate(90deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform: rotate(135deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        background: darksalmon;
+        transform: rotate(180deg);
+      }
+  }
