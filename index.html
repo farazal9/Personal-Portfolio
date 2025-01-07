@@ -16,76 +16,151 @@
 <body>
 
     <div class="text-white bg-color">
-        <!-- header -->
-        <div class="">
-            <header class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                <a href="/"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-3 fw-semibold text-white">Personal Portfolio</span>
-                </a>
 
-                <ul class="nav nav-pills">
-
-                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white">About Me</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link text-white">Skills</a></li>
-                    <li class="nav-item"><a href="#experience" class="nav-link text-white">Experience</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
-      
+<!-- Header -->
+<div class="">
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+            
+                <span class="fs-3 fw-semibold">Personal Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
-            </header>
-        </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
 
         <!-- hero-sec -->
 
+<!-- Enhanced Section -->
+<div class="container my-5">
+    <div class="row d-flex justify-content-between align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-5 col-md-6 col-sm-12 text-center text-md-start my-5">
+            <h1 class="fw-bolder display-4">Frontend Web</h1>
+            <h1 class="fw-bolder text-accent">Developer</h1>
 
+            <div class="my-5">
+                <a href="mailto:farazxwave@gmail.com">
+                    <button class="hire-me text-white px-4 py-2 mt-4 me-3 rounded-pill border-0 shadow-lg">Hire Me</button>
+                </a>
 
-        <div class="container  my-5">
-
-            <div class="row d-flex justify-content-center  align-items-center">
-
-
-                <div class="">
-                    
-                    <img class="img-fluid d-block d-md-none profile-image   img-dp"
-                        src="./img/dp.jpeg" alt="12">
-                </div>
-
-                <div class="col-lg-1 col-md-1 col-sm-1 d-none d-lg-block">
-                    <img class="img-fluid" src="./img/arrow.png" alt="12">
-                </div>
-                <div class="col-lg-5 col-md-6 col-sm-6 my-5">
-                    <h1 class="fw-bolder">Frontend Web </h1>
-                    <h1 class="dev fw-bolder">Developer</h1>
-
-                    <div class="my-5">
-                        <a href="mailto:farazxwave@gmail.com">
-                            <button class="hire-me text-white px-4 py-1 mt-4  ms-2  rounded-5 border-0">Hire me</button>
-                        </a>
-
-                        <a href="./resume/Faraz_Ali_Resume.pdf" download="Faraz_Ali_Resume">
-
-                            <button
-                                class="text-white px-4 py-1 mt-4  rounded-5 border-0 ms-2 dowload-cv align-items-center">Dowload
-                                Resume<img width="20px" class="img-fluid" src="./img/cv arr.png" alt="dd"> </button>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-2 col-md-2 col-sm-6 w-50 h-50 profile">
-
-                    <img class="img-fluid d-none d-md-block profile-image img-dp"
-                        src="./img/dp.jpeg" alt="12">
-                </div>
-
+                <a href="./resume/Faraz_Ali_Resume.pdf" download="Faraz_Ali_Resume">
+                    <button class="download-cv px-4 py-2 mt-4 rounded-pill border-0 shadow-lg">
+                        Download Resume
+                        <img width="20px" class="img-fluid ms-2 text-black" src="./img/cv arr.png" alt="Download Icon">
+                    </button>
+                </a>
             </div>
-
         </div>
+
+        <!-- Desktop Profile Image -->
+        <div class="col-lg-2 col-md-4 col-sm-12 text-center my-4 my-md-0">
+            <img class="img-fluid profile-image img-dp animated-profile" src="./img/dp.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</div>
+
+<style>
+/* Animations */
+.animated-profile {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    animation: bounceIn 3s infinite alternate ease-in-out;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.animated-profile:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.1) translateY(-10px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Button Hover Effects */
+.hire-me, .download-cv {
+    transition: all 0.3s ease-in-out;
+}
+
+.hire-me:hover, .download-cv:hover {
+    background-color: coral;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Arrow Image Styling */
+.arrow-image {
+    width: 50px;
+    height: auto;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Text Accent */
+.text-accent {
+    color: #f97c7c;
+}
+
+/* Responsive Profile Image */
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Alignment */
+@media (max-width: 768px) {
+    .text-center {
+        text-align: center !important;
+    }
+    .profile-image {
+        width: 150px;
+    }
+}
+</style>
 
 
 
@@ -216,13 +291,8 @@
     </div>
   </div>
   
-  
 
         <!-- projects -->
-
-
-
-
 
         <div class="container mt-5">
             <div class="my-3">

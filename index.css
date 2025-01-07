@@ -35,41 +35,6 @@ p{
 
   
 
-  .profile-image {
-    width: 200px;
-    height: 200px;
-    background-color: coral;
-    -webkit-animation: squareToCircle 2s 1s infinite alternate;
-  }
-  
-  @-webkit-keyframes squareToCircle {
-      0% {
-        border-radius: 0 0 0 0;
-        background: coral;
-        transform: rotate(0deg);
-      }
-      25% {
-        border-radius: 50% 0 0 0;
-        background: darksalmon;
-        transform: rotate(45deg);
-      }
-      50% {
-        border-radius: 50% 50% 0 0;
-        background: indianred;
-        transform: rotate(90deg);
-      }
-      75% {
-        border-radius: 50% 50% 50% 0;
-        background: lightcoral;
-        transform: rotate(135deg);
-      }
-      100% {
-        border-radius: 50% 50% 50% 50%;
-        background: darksalmon;
-        transform: rotate(180deg);
-      }
-  }   
-
   /* Timeline Container */
   .timeline {
     position: relative;
@@ -200,3 +165,5 @@ p{
       left: 20px;
     }
   }
+
+  
