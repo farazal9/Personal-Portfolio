@@ -69,3 +69,23 @@ p{
         transform: rotate(180deg);
       }
   }
+
+
+  #skills {
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  ul li {
+    animation: fadeInUp 0.8s ease;
+    margin: 0.5rem;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
