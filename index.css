@@ -166,4 +166,82 @@ p{
     }
   }
 
+
+
+  /* Animations */
+.animated-profile {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  animation: bounceIn 3s infinite alternate ease-in-out;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.animated-profile:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounceIn {
+  0% {
+      transform: scale(1) translateY(0);
+  }
+  50% {
+      transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+      transform: scale(1) translateY(0);
+  }
+}
+
+/* Button Hover Effects */
+.hire-me, .download-cv {
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me:hover, .download-cv:hover {
+  background-color: coral;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Arrow Image Styling */
+.arrow-image {
+  width: 50px;
+  height: auto;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+/* Text Accent */
+.text-accent {
+  color: #f97c7c;
+}
+
+/* Responsive Profile Image */
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Alignment */
+@media (max-width: 768px) {
+  .text-center {
+      text-align: center !important;
+  }
+  .profile-image {
+      width: 150px;
+  }
+}
   
